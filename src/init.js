@@ -38,7 +38,13 @@ $(document).ready(function() {
         for (var i = 0; i<dancers.length; i++) {
           dancers[i].lineUp()
         }
-      // $('.dancer')
+      $(this).addClass(".rotate");
     })
+
+    $('.dancer').on('click', function(event){
+console.log('clicked')
+        $(this).addClass(".rotate");
+    })
+
 });
 
