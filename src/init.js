@@ -24,10 +24,21 @@ $(document).ready(function() {
 
     var dancer = new dancerMakerFunction(
       $("body").height() * Math.random(),
+      // $("body").width() * Math.random(),
+      // 500,
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
     $('body').append(dancer.$node);
+      window.dancers.push(dancer)
   });
+
+    $('.lineUpButton').on('click',function(event){
+      // $('.dancer').removeClass('.styleSettingsOne').removeClass('.styleSettingsTwo').addClass('.lineUP')
+        for (var i = 0; i<dancers.length; i++) {
+          dancers[i].lineUp()
+        }
+      // $('.dancer')
+    })
 });
 

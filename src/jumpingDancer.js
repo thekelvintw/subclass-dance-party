@@ -11,6 +11,7 @@ var jumpingDancer = function(top, left, timeBetweenSteps) {
   console.log(oY);
   this.counter = 0;
   setInterval(this.jump.bind(this, oX, oY), 500);
+
 };
 
 
@@ -36,8 +37,6 @@ jumpingDancer.prototype.jump = function(oX, oY){
     this.$node.css(styleSettingsTwo);
   }
   this.counter++;
-  console.log(this.counter);
-  //this.$node.css(styleSettings);
 };
 
 
