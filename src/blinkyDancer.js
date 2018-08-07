@@ -36,12 +36,12 @@ var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
     // other effects you can use on a jQuery-wrapped html tag.
     blinkyDancer.$node.toggle();
   };*/
-this.step.apply(this);
+this.step(this);
 // this.step()
   //this.setPosition(this.top, this.left);
 
 //  return blinkyDancer;
-console.log(this)
+
   
 };
 
@@ -61,4 +61,5 @@ makeBlinkyDancer.prototype.step = function() {
   // other effects you can use on a jQuery-wrapped html tag.
   //blinkyDancer.$node.toggle();
   this.$node.toggle();
+  //this.$node.addClass('.jumpingClass');
 };
