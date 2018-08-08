@@ -31,19 +31,20 @@ $(document).ready(function() {
     );
     $('body').append(dancer.$node);
       window.dancers.push(dancer)
-  });
+    });
 
     $('.lineUpButton').on('click',function(event){
       // $('.dancer').removeClass('.styleSettingsOne').removeClass('.styleSettingsTwo').addClass('.lineUP')
         for (var i = 0; i<dancers.length; i++) {
           dancers[i].lineUp()
+          // $(dancers[i].$node).addClass("rotate");
         }
-      $(this).addClass(".rotate");
+      
     })
 
-    $('.dancer').on('click', function(event){
-console.log('clicked')
-        $(this).addClass(".rotate");
+    $('body').on('mouseover' ,'span', function(event){
+// console.log('mouo')
+        $('.dancer').addClass(".rotate");
     })
 
 });

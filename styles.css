@@ -49,6 +49,36 @@ body, a:link, a:visited, a:active{
 
 }
 
+.rotate:hover{
+  transition: 0.70s;
+  transform: rotate(1800deg);  
+
+}
+
+
+  
+
+.zoom:hover{
+  transition: transform 0.4s;
+  transform: scale(1.4);
+}
+
+
+#carrot:hover{
+  transition: transform 0.5s;
+  transform: scale(1.6);
+}
+
+
+@keyframes #carrot {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
 /*.lineUP{
   top:500px;
 }*/
